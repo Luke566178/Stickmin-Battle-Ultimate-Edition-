@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stickman Battle Mega</title>
+<link rel="stylesheet" href="styles.css">
+<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<h1>Stickman Battle Mega</h1>
+
+<!-- Canvas -->
+<canvas id="gameCanvas"></canvas>
+
+<!-- Custom Stickman Menu -->
+<div id="customMenu">
+  <h2>Create Custom Stickman</h2>
+  <label>Color: <input type="color" id="customColor" value="#0000FF"></label><br>
+  <label>Hat: 
+    <select id="customHat">
+      <option value="">None</option>
+      <option value="green">Luigi Hat</option>
+      <option value="red">Mario Hat</option>
+      <option value="gold">Iron Man Helmet</option>
+      <option value="purple">Thanos Helmet</option>
+    </select>
+  </label><br>
+  <label>Weapon:
+    <select id="customWeapon">
+      <option value="sword">Sword</option>
+      <option value="fireball">Fireball</option>
+      <option value="meteorStaff">Meteor Staff</option>
+      <option value="thanosGauntlet">Thanos Gauntlet</option>
+      <option value="ironGauntlet">Iron Gauntlet</option>
+    </select>
+  </label><br>
+  <button onclick="createCustomStickman()">Save</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
