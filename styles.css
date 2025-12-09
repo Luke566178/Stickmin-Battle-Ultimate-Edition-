@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+#gameCanvas {
+  display: block;
+  margin: 0 auto;
+  background: #333;
+}
+
+#customMenu {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  border-radius: 8px;
+}
